@@ -17,10 +17,11 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: center; /* Center the navigation items */
 }
 
 nav ul li {
-  display: inline-block;
   margin-right: 10px;
 }
 
@@ -30,6 +31,12 @@ nav ul li a {
 }
 
 main {
+  padding: 20px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
   padding: 20px;
 }
 
