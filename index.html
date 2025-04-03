@@ -1,60 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Ryan Rogers</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryan A. Rogers | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+    header {
+      background-color: #ffffff;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    .project-card {
+      background-color: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .project-card h3 {
+      margin-top: 0;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background-color: #fafafa;
+      border-top: 1px solid #eee;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Ryan Rogers</h1>
+    <h1>Ryan A. Rogers</h1>
     <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#profile">Profiles</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#projects">Project</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <a href="#projects">Projects</a>
+      <a href="Ryan_A_Rogers_Resume_2025.pdf" download>Resume</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
     <section id="about">
       <h2>About Me</h2>
-      <p>Texas State University Senior Pursuing a Bachelor's Degree in Computer Information Systems. Eager to start my professional journey and explore new oppurtunities.</p>
+      <p>I'm a Computer Information Systems student at Texas State University, graduating in August 2025. I enjoy solving real-world problems through data analysis, automation, and technology-driven solutions.</p>
     </section>
 
-    <section id="profile">
-      <h2>Profiles</h2>
-      <p><a href="https://app.suitable.co/#/institution/4441/scorecard/1957323">Suitable</a>
-      <a href="www.linkedin.com/in/ryan-rogers-785870226">LinkedIn</a></p>
-
-    </section>
-
-    <section id="resume">
-      <h2>Resume</h2>
-      <p><iframe src = "Ryan Rogers Resume Current.pdf" width="700" height="600"> </iframe> </p>
-    </section>
-
-    <section id="project">
+    <section id="projects">
       <h2>Projects</h2>
-      <ul>
-        <li>
-          <h3>Data Modeling</h3>
-          <p>Created using R Studio.</p>
-          <a href="PROJECT REPORT 3334 copy.pdf">View Details</a>
-        </li>
-      </ul>
+
+      <div class="project-card">
+        <h3>Employee Management System</h3>
+        <p><strong>Tech:</strong> Python, Object-Oriented Programming</p>
+        <p>This Python-based application models a business employee management system. It handles different employee types (Manager, Hourly, Intern), calculates department budgets, and processes payroll with inheritance and encapsulation principles.</p>
+        <a class="button" href="BP2%20Project%201.py" download>Download Python Project</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Drug Consumption Predictive Analysis</h3>
+        <p><strong>Tech:</strong> R Studio, Logistic Regression</p>
+        <p>Developed two logistic regression models to predict soft and hard drug use based on personality traits, age, and education. The soft drug model achieved 82% accuracy and revealed correlations between openness and drug use; the hard drug model had 78% accuracy and highlighted neuroticism as a major factor.</p>
+        <a class="button" href="R%20Studio%20Exe%20Summary%20Proj.pdf" download>Download Project Summary (PDF)</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Foreign Market Entry Strategy</h3>
+        <p><strong>Tech:</strong> Data Analysis, Business Research</p>
+        <p>Analyzed global market data to recommend business entry into Bolivia, Bulgaria, Jordan, and Paraguay using sources like World Bank and Euromonitor.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Pilot Appliances Data Dashboard</h3>
+        <p><strong>Tech:</strong> Power BI</p>
+        <p>Built a dynamic Power BI dashboard for a company’s sales and expenses, enabling management to monitor key metrics in real-time. Includes KPIs, cost breakdowns, and visual trend insights.</p>
+        <a class="button" href="Pilot%20Appliances.pbix" download>Download Power BI Dashboard</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Forward Fitness Web Design</h3>
+        <p><strong>Tech:</strong> HTML, CSS, Multi-page Layout</p>
+        <p>This in-progress static website design includes several pages like Home, About, Contact, Nutrition, and Classes. Built to demonstrate responsive layout skills and clean interface design using HTML/CSS and image assets.</p>
+        <a class="button" href="fitness.zip" download>Download Project Files (ZIP)</a>
+      </div>
+
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
-      <p>(903) 238-1254 | ryrogers323@gmail.com </p>
+      <p>Email: <a href="mailto:ryrogers323@gmail.com">ryrogers323@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/ryrogers323" target="_blank">github.com/ryrogers323</a></p>
+      <p>LinkedIn: <a href="#" target="_blank">(Add your link here)</a></p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2024 Ryan Rogers</p>
+    <p>&copy; 2025 Ryan A. Rogers. All rights reserved.</p>
   </footer>
 </body>
 </html>
